@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tf-pod
+spec:
+  containers:
+    - name: tf-container
+      image: tensorflow/tensorflow:latest-gpu
+      resources:
+        limits:
+          nvidia.com/gpu: 1 # requesting 1 GPUs
