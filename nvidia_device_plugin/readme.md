@@ -22,3 +22,6 @@ kubectl describe node <nodeip>
 
 测试gpu
 kubectl apply -f tf-pod.yaml
+
+进如pod
+kubectl exec tf-pod -it -- bash

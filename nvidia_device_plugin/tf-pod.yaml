@@ -8,4 +8,6 @@ spec:
       image: tensorflow/tensorflow:latest-gpu
       resources:
         limits:
-          nvidia.com/gpu: 1 # requesting 1 GPUs
+          tencent.com/vcuda-core: 100
+          tencent.com/vcuda-memory: 31
+          #nvidia.com/gpu: 1 # requesting 1 GPUs
