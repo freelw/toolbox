@@ -12,7 +12,8 @@ cmds = [
     --network bridge=br0 \\
     --graphics vnc,port=%(port)s \\
     --force""",
-    """virsh attach-disk centos74 /home/vms/%(name)s.qcow2 vdb --live --cache=none --subdriver=qcow2""",
+    """qemu-img create -f qcow2 /home/vms/%(name)s_vdb.qcow2 500G""",
+    """virsh attach-disk %(name)s /home/vms/%(name)s_vdb.qcow2 vdb --live --cache=none --subdriver=qcow2""",
     """socat TCP-LISTEN:%(port1)s,reuseaddr,fork TCP:localhost:%(port)s"""
 ]
 if '__main__' == __name__:
