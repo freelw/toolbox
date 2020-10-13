@@ -7,3 +7,4 @@
 5. yum install make gcc
 6. 下载cuda安装包
 7. 运行安装包
+8. 安装 nvidia-container-toolkit
