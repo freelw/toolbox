@@ -17,6 +17,10 @@
         --graphics vnc,port=5910 \
         --force
 
+## 使用命令行安装
+
+    --graphics none
+
 ## socat给vnc打洞（vnc监听在localhost 所以要打洞）
 
     socat TCP-LISTEN:5912,reuseaddr,fork TCP:localhost:5910
