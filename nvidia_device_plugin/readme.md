@@ -7,6 +7,8 @@
     
     nvidia-modprobe -u -c=0
 
+    #执行之后会生成这个设备文件 /dev/nvidia-uvm
+
 4. 测试gpu
     
     kubectl apply -f tf-pod.yaml
