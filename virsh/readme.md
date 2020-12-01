@@ -19,7 +19,8 @@
 
 ## 使用命令行安装
 
-    --graphics none
+    --graphics none \
+    --extra-args='console=ttyS0' \
 
 ## socat给vnc打洞（vnc监听在localhost 所以要打洞）
 
