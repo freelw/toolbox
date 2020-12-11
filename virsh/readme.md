@@ -1,5 +1,9 @@
 # kvm 相关操作
 
+## 安装kvm资料
+
+    https://github.com/jaywcjlove/handbook/blob/master/CentOS/CentOS7%E5%AE%89%E8%A3%85KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%A6%E8%A7%A3.md#bridge%E6%A8%A1%E5%BC%8F%E9%85%8D%E7%BD%AE
+
 ## 添加磁盘
 
     virsh attach-disk centos74 /var/linux/images/centos74-add.qcow2 vdb --live --cache=none --subdriver=qcow2
